@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        [class*="grid__col--3"] {
+            flex: 0 25%; }
+        [class*="grid__col--9"] {
+            flex: 0 645px; }
+        .grid__row {
+            display: block; }
+        @media (min-width: 769px) {
+            .grid__row {
+                display: flex;
+                flex-direction: row;
+                justify-content: center; }
+        }
+        .nav__item {
+            list-style: none;
+            text-align: center;
+            margin: 5px;
+            background-color: #1b1b1b;
+            border-radius: 5px;
+            padding: 10px; }
+        .nav__item a {
+            text-decoration: none;
+            color: #828282; }
+        .nav__item:first-child {
+            background-color: #00819F; }
+        .nav__item:first-child a {
+            color: white; }
+        .nav {
+            display: block;
+            margin: auto; }
+        @media (min-width: 769px) {
+            .nav {
+                margin-top: 50px; }
+            .nav .nav__item {
+                display: inline-block; } }
+    </style>
+</head>
+<body>
+<div class="grid__row">
+    <div class="grid__col--3">
+        <a class="link" href="/">
+            <img class="img--logo" alt="circles logo" src="IMG/logo.png">
+        </a>
+    </div>
+    <div class="grid__col--9">
+        <nav role="navigation">
+            <ul class="nav">
+                <li class="nav__item"><a href="#type">Typography</a></li>
+                <li class="nav__item"><a href="#buttons">Buttons</a></li>
+                <li class="nav__item"><a href="#forms">Form</a></li>
+                <li class="nav__item"><a href="#images">Images</a></li>
+                <li class="nav__item"><a href="#grid">Grid</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+</body>
+</html>
+
+
+
+
+
+<!--
+<html>
+<head>
+    <title>Nombre de la empresa</title>
+</head>
+<body>
+<h1>Nombre de la empresa</h1>
+<p>Esta es la página web de la empresa, donde puedes encontrar información sobre su misión, visión, valores, servicios, clientes y proyectos.</p>
+<h2>Quiénes somos</h2>
+<p>La empresa fue fundada en el año 2020 por un grupo de emprendedores apasionados por la tecnología y la innovación. Nuestro objetivo es ofrecer soluciones digitales de calidad y a medida para las necesidades de nuestros clientes.</p>
+<h3>Los fundadores</h3>
+<ul>
+    <li><strong>Nombre 1</strong>: Es el CEO y cofundador de la empresa. Tiene más de 10 años de experiencia en el sector de la tecnología y es experto en desarrollo web, inteligencia artificial y diseño de interfaces.</li>
+    <li><strong>Nombre 2</strong>: Es el CTO y cofundador de la empresa. Tiene más de 8 años de experiencia en el sector de la ingeniería y es experto en sistemas, redes y seguridad informática.</li>
+    <li><strong>Nombre 3</strong>: Es el CFO y cofundador de la empresa. Tiene más de 6 años de experiencia en el sector financiero y es experto en contabilidad, gestión y análisis de datos.</li>
+</ul>
+<h2>Qué hacemos</h2>
+<p>Ofrecemos los siguientes servicios:</p>
+<ol>
+    <li>Desarrollo web: Creamos páginas web profesionales, responsivas y adaptadas a las necesidades de cada cliente. Usamos las últimas tecnologías y estándares del mercado.</li>
+    <li>Inteligencia artificial: Aplicamos técnicas de aprendizaje automático, procesamiento de lenguaje natural y visión artificial para resolver problemas complejos y generar valor para nuestros clientes.</li>
+    <li>Diseño de interfaces: Diseñamos interfaces de usuario intuitivas, atractivas y funcionales para mejorar la experiencia de los usuarios y aumentar la conversión y la fidelización.</li>
+</ol>
+<h2>Con quiénes trabajamos</h2>
+<p>Trabajamos con clientes de diferentes sectores e industrias, tales como:</p>
+<ul>
+    <li>Educación: Hemos desarrollado plataformas educativas online para facilitar el aprendizaje a distancia y la interacción entre profesores y alumnos.</li>
+    <li>Salud: Hemos creado aplicaciones de salud digital para mejorar el diagnóstico, el tratamiento y el seguimiento de los pacientes.</li>
+    <li>Turismo: Hemos diseñado sitios web de turismo para promover destinos, reservar alojamientos y ofrecer servicios personalizados a los viajeros.</li>
+</ul>
+<h2>Qué proyectos hemos realizado</h2>
+<p>A continuación, te mostramos algunos de los proyectos que hemos realizado para nuestros clientes:</p>
+<table>
+    <tr>
+        <th>Cliente</th>
+        <th>Proyecto</th>
+        <th>Descripción</th>
+    </tr>
+    <tr>
+        <td>Universidad X</td>
+        <td>Plataforma educativa online</td>
+        <td>Una plataforma web que permite a los estudiantes acceder a cursos, materiales, evaluaciones y certificados de forma online.</td>
+    </tr>
+    <tr>
+        <td>Hospital Y</td>
+        <td>Aplicación de salud digital</td>
+        <td>Una aplicación móvil que permite a los pacientes consultar sus historiales médicos, solicitar citas, recibir resultados de pruebas y comunicarse con los médicos.</td>
+    </tr>
+    <tr>
+        <td>Agencia Z</td>
+        <td>Sitio web de turismo</td>
+        <td>Un sitio web que permite a los usuarios buscar, comparar y reservar hoteles, vuelos, actividades y paquetes turísticos en diferentes destinos.</td>
+    </tr>
+</table>
+<h2>Cómo contactarnos</h2>
+<p>Si quieres saber más sobre nosotros, nuestros servicios o nuestros proyectos, puedes contactarnos a través de los siguientes medios:</p>
+<ul>
+    <li>Email: contacto@empresa.com</li>
+    <li>Teléfono: +57 123 456 7890</li>
+    <li>Dirección: Calle 1 # 2 - 3, San Cristóbal, Distrito Capital, Colombia</li>
+    <li>Redes sociales: Facebook, Twitter, Instagram, LinkedIn</li>
+</ul>
+</body>
+</html>
+-->
+
+
+
+
+<!--
+<html>
+<head>
+    <title>Servicios de Seguridad</title>
+</head>
+<body>
+<h1>Bienvenido a Servicios de Seguridad</h1>
+<p>Somos una empresa dedicada a brindar soluciones de seguridad para hogares y negocios.</p>
+<p>Ofrecemos los siguientes servicios:</p>
+<ul>
+    <li>Instalación y mantenimiento de alarmas y cámaras de seguridad</li>
+    <li>Monitoreo y respuesta de emergencia 24/7</li>
+    <li>Asesoría y capacitación en prevención de riesgos</li>
+</ul>
+<p>Si desea contratar nuestros servicios o solicitar una cotización, por favor llene el siguiente formulario:</p>
+<form action="enviar.php" method="post">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br>
+    <label for="telefono">Teléfono:</label>
+    <input type="tel" id="telefono" name="telefono"><br>
+    <label for="servicio">Servicio de interés:</label>
+    <select id="servicio" name="servicio">
+        <option value="alarmas">Alarmas</option>
+        <option value="camaras">Cámaras</option>
+        <option value="asesoria">Asesoría</option>
+    </select><br>
+    <label for="mensaje">Mensaje:</label>
+    <textarea id="mensaje" name="mensaje" rows="4" cols="50"></textarea><br>
+    <input type="submit" value="Enviar">
+</form>
+</body>
+</html>
+-->
+
